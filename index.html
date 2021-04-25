@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gonzalo Lamas</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+    />
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -12,52 +16,88 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Inicio</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Sobre mí <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
+    <div id="menuDemo">
+      <!--start CssMenu-->
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon" onclick="toggleCssMenu(this)">
+          <div class="three-line">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="cssmenu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre mí</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contactos</a></li>
         </ul>
       </div>
-    </nav>
 
-    <main>
+      <main>
         <section class="about-me">
-            <img class="d-flex align-items-end justify-content-end w-25 h-25 " src="assets/icons/dev.svg" alt="developer">
+          <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+              <img
+                class="w-50 h-auto mt-5"
+                src="assets/icons/dev.svg"
+                alt="developer"
+              />
+              <div class="d-flex justify-content-center align-items-center">
+                <h1 class="text-white">Desarrollador FrontEnd</h1>
+                <p class="text-white">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                  doloribus dolorem mollitia vero ab ratione, odio autem tempora
+                  perspiciatis temporibus alias harum id et eveniet! Eligendi
+                  ipsam aspernatur nostrum atque!
+                </p>
+              </div>
+            </div>
+            
+            <div class="d-flex justify-content-center align-items-center">
+              
+              <div class="d-flex justify-content-around flex-column">
+                <h2>Habilidades</h2>
+              <img src="assets/icons/html.png" alt="">
+              <img src="assets/icons/html.png" alt="">
+              <img src="assets/icons/html.png" alt="">
+              </div>
+            </div>
+          </div>
         </section>
         <section class="projects">
-
+          <div class="container">
+            <div class="d-flex-justify-content-center-align-items-center"></div>
+          </div>
         </section>
-        <section class="contact">
+        <section class="contact"></section>
+      </main>
 
-        </section>
-    </main>
-
+      <script>
+        function toggleCssMenu(icon) {
+          var cssmenu = document.getElementById("cssmenu");
+          if (icon.className.indexOf("active") == -1) {
+            icon.className = "menu-icon active";
+            cssmenu.style.display = "block";
+            setTimeout(function () {
+              cssmenu.className = "active";
+            }, 0);
+          } else {
+            icon.className = "menu-icon";
+            cssmenu.className = "";
+            setTimeout(function () {
+              cssmenu.style.display = "none";
+            }, 411);
+          }
+        }
+      </script>
+      <!--end CssMenu-->
+    </div>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
