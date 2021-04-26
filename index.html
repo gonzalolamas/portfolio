@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gonzalo Lamas</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Cormorant"
-    />
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -17,6 +13,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css" integrity="sha512-RliK2gk03WxUELn57ddjWLhEfhUiOZ85VvWLImFy8A7FOPMkF4Z9YGQ3VKX5jpwkEerAL6I0nC+JNeCPrxWBTw==" crossorigin="anonymous" />
+
+
   </head>
   <body>
     <div id="menuDemo">
@@ -40,35 +44,59 @@
       </div>
 
       <main>
-        <section class="about-me">
+        <section class="home mt-5">
+          <div class="shake-slow">
+          <h1>Bienvenido a mi portfolio</h1>
+          <i class="fas fa-4x fa-laptop-code"></i>
+          </div>
+        </section>
+        <section class="about-me mt-5">
           <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
-              <img
-                class="w-50 h-auto mt-5"
-                src="assets/icons/dev.svg"
-                alt="developer"
-              />
-              <div class="d-flex justify-content-center align-items-center">
-                <h1 class="text-white">Desarrollador FrontEnd</h1>
-                <p class="text-white">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-                  doloribus dolorem mollitia vero ab ratione, odio autem tempora
-                  perspiciatis temporibus alias harum id et eveniet! Eligendi
-                  ipsam aspernatur nostrum atque!
-                </p>
+            <div class="row">
+              <div class="col-sm-4 col-xl-8">
+                  <img
+                    class="w-50 h-auto mt-5"
+                    src="assets/icons/dev.svg"
+                    alt="developer"
+                  />
+                  
               </div>
+                  <div class="col-sm-8 col-xl-4 mt-5">
+                    <h1>Desarrollador FrontEnd</h1>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                      doloribus dolorem mollitia vero ab ratione, odio autem tempora
+                      perspiciatis temporibus alias harum id et eveniet! Eligendi
+                      ipsam aspernatur nostrum atque!
+                    </p>
+                  </div>
             </div>
+            <!-- This class can be used with responsive classes such as -md- as well: -->
             
-            <div class="d-flex justify-content-center align-items-center">
-              
-              <div class="d-flex justify-content-around flex-column">
-                <h2>Habilidades</h2>
-              <img src="assets/icons/html.png" alt="">
-              <img src="assets/icons/html.png" alt="">
-              <img src="assets/icons/html.png" alt="">
+            <h2>Habilidades</h2>
+            <div class="row mt-2">
+              <div class="col-6 col-xl-2">
+                <i class="fab fa-4x fa-html5 shake-rotate" style="color: rgb(236, 147, 31);"></i>
+              </div>
+              <div class="col-6 col-xl-1">
+                <i class="fab fa-4x fa-css3-alt shake-little" style="color: rgb(18, 70, 182);"></i>
+              </div>
+              <div class="col-6 col-xl-2">
+                <i class="fab fa-4x fa-js shake-little" style="color: rgb(253, 249, 27);"></i>
+              </div>
+              <div class="col-6 col-xl-2">
+                <i class="fab fa-4x fa-node shake-little" style="color: rgb(19, 155, 19);"></i>
+              </div>
+              <div class="col-6 col-xl-2">
+                <i class="fab fa-4x fa-bootstrap shake-little" style="color: rgb(105, 19, 155);"></i>
+              </div>
+              <div class="col-6 col-xl-2">
+                <i class="fab fa-4x fa-github shake-rotate" style="color: rgb(11, 6, 14);"></i>
+              </div>
               </div>
             </div>
           </div>
+  
         </section>
         <section class="projects">
           <div class="container">

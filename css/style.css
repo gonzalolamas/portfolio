@@ -2,11 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 body {
     background:transparent;
-    background: url("../assets/icons/cool-background.svg") no-repeat center top;
+    background: url("../assets/img/cool-background.png") no-repeat center top;
     background-size: cover;
 }
 #menuDemo { text-align:center; padding:30px 8px; }
