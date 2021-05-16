@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu-css.css">
     <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
@@ -36,15 +37,15 @@
       </div>
       <div id="cssmenu">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre mí</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Contactos</a></li>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about-me">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
 
       <main>
-        <section class="home mt-5">
+        <section class="home mt-5" id="home">
           <div class="shake-slow">
           <h1>Bienvenido a mi portfolio</h1>
           <i class="fas fa-4x fa-laptop-code"></i>
@@ -62,70 +63,79 @@
                   
               </div>
                   <div class="col-sm-8 col-xl-4 mt-5">
-                    <h1>Desarrollador FrontEnd</h1>
+                    <h1>Gonzalo Lamas</h1>
+                    <hr>
+                    <h2>Desarrollador FrontEnd</h2>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-                      doloribus dolorem mollitia vero ab ratione, odio autem tempora
-                      perspiciatis temporibus alias harum id et eveniet! Eligendi
-                      ipsam aspernatur nostrum atque!
+                      Soy desarrollador web y me capacito en frontend. Me gusta trabajar en equipo, y de manera organizada.
                     </p>
                   </div>
             </div>
-            <!-- This class can be used with responsive classes such as -md- as well: -->
             
-            <h2>Habilidades</h2>
+            <h2 class="m-5" id="about-me">Habilidades</h2>
             <div class="row mt-2">
-              <div class="col-6 col-xl-2">
-                <i class="fab fa-4x fa-html5 shake-rotate" style="color: rgb(236, 147, 31);"></i>
+              <div class="col-6 col-xl-4">
+                <i class="fab fa-4x fa-html5 shake-rotate text-warning m-1 shadow-style"></i>
               </div>
-              <div class="col-6 col-xl-1">
-                <i class="fab fa-4x fa-css3-alt shake-little" style="color: rgb(18, 70, 182);"></i>
+              <div class="col-6 col-xl-4">
+                <i class="fab fa-4x fa-css3-alt shake-little text-primary m-1 shadow-style" ></i>
               </div>
-              <div class="col-6 col-xl-2">
-                <i class="fab fa-4x fa-js shake-little" style="color: rgb(253, 249, 27);"></i>
+              <div class="col-6 col-xl-4">
+                <i class="fab fa-4x fa-js shake-little m-1 shadow-style" style="color: rgb(253, 249, 27);"></i>
               </div>
-              <div class="col-6 col-xl-2">
-                <i class="fab fa-4x fa-node shake-little" style="color: rgb(19, 155, 19);"></i>
+              <div class="col-6 col-xl-4">
+                <i class="fab fa-4x fa-node shake-little text-success m-1 shadow-style"></i>
               </div>
-              <div class="col-6 col-xl-2">
-                <i class="fab fa-4x fa-bootstrap shake-little" style="color: rgb(105, 19, 155);"></i>
+              <div class="col-6 col-xl-4">
+                <i class="fab fa-4x fa-bootstrap shake-little m-1 shadow-style" style="color: rgb(105, 19, 155);"></i>
               </div>
-              <div class="col-6 col-xl-2">
-                <i class="fab fa-4x fa-github shake-rotate" style="color: rgb(11, 6, 14);"></i>
+              <div class="col-6 col-xl-4">
+                <i class="fab fa-4x fa-github shake-rotate text-dark m-1 shadow-style"></i>
               </div>
               </div>
             </div>
           </div>
   
         </section>
-        <section class="projects">
-          <div class="container">
-            <div class="d-flex-justify-content-center-align-items-center"></div>
+        <section class="projects" id="projects">
+          <div class="container d-flex flex-column justify-content-center align-items-center text-center mt-3">
+            <div class="m-3">
+              <h2>Proyectos</h2>
+            </div>
+            <div class="m-5">
+              <img class="w-50 h-auto" src="assets/img/hacemos-tu-tarea.png" alt="project-tareas">
+              <h3>Hacemos tu tarea</h3>
+              <p>Es un proyecto realizado para emprendimiento de un amigo, el cual brinda ayuda en tareas y/o trabajos prácticos para el colegio.📖</p>
+              <a href="https://gonzalolamas.github.io/Clases-particulares/" target="_blank" class="myButton">Live</a>
+              <a href="https://github.com/gonzalolamas/Clases-particulares" class="myButton">Repo</a>
+            </div>
+            <div class="m-5">
+              <img class="w-50 h-auto" src="assets/img/streaming.png" alt="project-streaming">
+              <h3>Hacemos tu tarea</h3>
+              <p>Es un proyecto realizado para emprendimiento de un amigo, el cual brinda ayuda en tareas y/o trabajos prácticos para el colegio.📖</p>
+              <a href="https://aromd.github.io/streaming-1D-develop/" target="_blank" class="myButton">Live</a>
+              <a href="https://github.com/AP-openProjects/streaming-1D" target="_blank" class="myButton">Repo</a>
+            </div>
           </div>
         </section>
-        <section class="contact"></section>
       </main>
 
-      <script>
-        function toggleCssMenu(icon) {
-          var cssmenu = document.getElementById("cssmenu");
-          if (icon.className.indexOf("active") == -1) {
-            icon.className = "menu-icon active";
-            cssmenu.style.display = "block";
-            setTimeout(function () {
-              cssmenu.className = "active";
-            }, 0);
-          } else {
-            icon.className = "menu-icon";
-            cssmenu.className = "";
-            setTimeout(function () {
-              cssmenu.style.display = "none";
-            }, 411);
-          }
-        }
-      </script>
-      <!--end CssMenu-->
-    </div>
+      <footer>
+        <div class="container contact-footer" id="contact">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-6 mt-5">
+              <p class="font-weight-bold">¡Gracias por visitar mi portfolio!</p>
+            </div>
+            <div class="col-3">
+              <a href="https://github.com/gonzalolamas" target="_blank"><i class="fab fa-4x fa-github shake-little"></i></a>
+              <a href="https://www.linkedin.com/in/gonzalo-lamas/" target="_blank"><i class="fab fa-4x fa-linkedin shake-little"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- file js -->
+    <script src="js/index.js"></script>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
