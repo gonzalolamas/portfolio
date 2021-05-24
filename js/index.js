@@ -1,5 +1,5 @@
 /* Icon menu navbar */
-function toggleCssMenu(icon) {
+/* function toggleCssMenu(icon) {
   var cssmenu = document.getElementById("cssmenu");
   if (icon.className.indexOf("active") == -1) {
     icon.className = "menu-icon active";
@@ -14,4 +14,8 @@ function toggleCssMenu(icon) {
       cssmenu.style.display = "none";
     }, 411);
   }
-}
+} */
+
+/* navbar contraido al seleccionar */
+
+

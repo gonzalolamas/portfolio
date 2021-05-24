@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: white;
 }
 
 html {
@@ -11,21 +10,14 @@ html {
 
 body {
   background: transparent;
-  background: url("../assets/img/cool-background.png") no-repeat center top;
-  background-size: cover;
+  background: url("../assets/img/imagen-fond.png");
 }
 
 .projects {
-  background-color: #404054;
-  opacity: 0.8;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #404054 10px
-    ),
-    repeating-linear-gradient(#463d96, #444cf7);
+  background-image:url(../assets/img/webb-dark.png);
 }
 
+/* Background icons */
 .shadow-style {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -35,31 +27,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.myButton {
-  box-shadow: 3px 4px 0px 0px #899599;
-  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-  background-color: #ededed;
-  border-radius: 14px;
-  border: 1px solid #d6bcd6;
-  display: inline-block;
-  cursor: pointer;
-  color: #3a8a9e;
-  font-family: Arial;
-  font-size: 17px;
-  padding: 9px 22px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #e1e2ed;
-}
-.myButton:hover {
-  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-  background-color: #bab1ba;
-}
-.myButton:active {
-  position: relative;
-  top: 1px;
-}
-
-.contact-footer{
-    height: 150px;
-    width: 100%;
+.contact-footer {
+  height: 150px;
+  width: 100%;
 }

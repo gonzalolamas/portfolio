@@ -12,49 +12,60 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <!-- styles css -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/menu-css.css">
+    <!-- iconos -->
     <script src="https://kit.fontawesome.com/764c90c9d0.js" crossorigin="anonymous"></script>
+    <!-- fuente de letra -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cormorant"
     />
+    <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css" integrity="sha512-RliK2gk03WxUELn57ddjWLhEfhUiOZ85VvWLImFy8A7FOPMkF4Z9YGQ3VKX5jpwkEerAL6I0nC+JNeCPrxWBTw==" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
-    <div id="menuDemo">
-      <!--start CssMenu-->
-      <div class="menu-icon-wrapper">
-        <div class="menu-icon" onclick="toggleCssMenu(this)">
-          <div class="three-line">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div id="cssmenu">
-        <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#about-me">Sobre mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+    <!-- menu bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Hola!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item active js-scroll-trigger">
+            <a class="nav-link" href="#home">Sobre mí<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active js-scroll-trigger">
+            <a class="nav-link" href="#about-me">Habilidades<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active js-scroll-trigger">
+            <a class="nav-link" href="#projects">Proyectos<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active js-scroll-trigger">
+            <a class="nav-link" href="#contact">Contacto<span class="sr-only">(current)</span></a>
+          </li>
         </ul>
       </div>
+    </nav>
 
       <main>
-        <section class="home mt-5" id="home">
-          <div class="shake-slow">
-          <h1>Bienvenido a mi portfolio</h1>
-          <i class="fas fa-4x fa-laptop-code"></i>
-          </div>
+        <section class="home mt-5" id="home" data-aos="fade-right">
+          
         </section>
         <section class="about-me mt-5">
           <div class="container">
             <div class="row">
-              <div class="col-sm-4 col-xl-8">
+
+              <div class="col-12 shake-slow">
+                <h1>Bienvenido a mi portfolio</h1>
+                <i class="fas fa-4x fa-laptop-code"></i>
+                </div>
+
+              <div class="col-sm-4 col-xl-7" data-aos="slide-up">
                   <img
                     class="w-50 h-auto mt-5"
                     src="assets/icons/dev.svg"
@@ -62,7 +73,8 @@
                   />
                   
               </div>
-                  <div class="col-sm-8 col-xl-4 mt-5">
+              
+                  <div class="col-sm-8 col-xl-4 mt-5" data-aos="fade-left">
                     <h1>Gonzalo Lamas</h1>
                     <hr>
                     <h2>Desarrollador FrontEnd</h2>
@@ -72,49 +84,50 @@
                   </div>
             </div>
             
-            <h2 class="m-5" id="about-me">Habilidades</h2>
+            <h2 class="m-5 text-center" id="about-me">Habilidades</h2>
             <div class="row mt-2">
-              <div class="col-6 col-xl-4">
-                <i class="fab fa-4x fa-html5 shake-rotate text-warning m-1 shadow-style"></i>
+              <div class="col-6 col-xl-6">
+                <i class="fab fa-4x fa-html5 shake text-warning text-center shadow-style m-1"></i>
               </div>
-              <div class="col-6 col-xl-4">
-                <i class="fab fa-4x fa-css3-alt shake-little text-primary m-1 shadow-style" ></i>
+              <div class="col-6 col-xl-6">
+                <i class="fab fa-4x fa-css3-alt shake-little text-primary text-center shadow-style m-1"></i>
               </div>
-              <div class="col-6 col-xl-4">
-                <i class="fab fa-4x fa-js shake-little m-1 shadow-style" style="color: rgb(253, 249, 27);"></i>
+              <div class="col-6 col-xl-6">
+                <i class="fab fa-4x fa-js shake-little text-center shadow-style m-1" style="color: rgb(253, 249, 27);"></i>
               </div>
-              <div class="col-6 col-xl-4">
-                <i class="fab fa-4x fa-node shake-little text-success m-1 shadow-style"></i>
+              <div class="col-6 col-xl-6">
+                <i class="fab fa-4x fa-node shake-little text-success text-center shadow-style m-1"></i>
               </div>
-              <div class="col-6 col-xl-4">
-                <i class="fab fa-4x fa-bootstrap shake-little m-1 shadow-style" style="color: rgb(105, 19, 155);"></i>
+              <div class="col-6 col-xl-6">
+                <i class="fab fa-4x fa-bootstrap shake-little text-center shadow-style m-1" style="color: rgb(105, 19, 155);"></i>
               </div>
-              <div class="col-6 col-xl-4">
-                <i class="fab fa-4x fa-github shake-rotate text-dark m-1 shadow-style"></i>
+              <div class="col-6 col-xl-6">
+                <i class="fab fa-4x fa-github shake text-dark text-center shadow-style m-1"></i>
               </div>
               </div>
             </div>
           </div>
   
         </section>
-        <section class="projects" id="projects">
+        <section class="projects text-white" id="projects">
           <div class="container d-flex flex-column justify-content-center align-items-center text-center mt-3">
             <div class="m-3">
               <h2>Proyectos</h2>
             </div>
-            <div class="m-5">
-              <img class="w-50 h-auto" src="assets/img/hacemos-tu-tarea.png" alt="project-tareas">
+            <div class="m-5" data-aos="fade-up">
+              <img class="w-75 h-75" src="assets/img/hacemos-tu-tarea.png" alt="project-tareas">
               <h3>Hacemos tu tarea</h3>
               <p>Es un proyecto realizado para emprendimiento de un amigo, el cual brinda ayuda en tareas y/o trabajos prácticos para el colegio.📖</p>
-              <a href="https://gonzalolamas.github.io/Clases-particulares/" target="_blank" class="myButton">Live</a>
-              <a href="https://github.com/gonzalolamas/Clases-particulares" class="myButton">Repo</a>
+              <a href="https://gonzalolamas.github.io/Clases-particulares/" target="_blank"><i class="far fa-3x fa-eye"></i></a>
+              <a href="https://github.com/gonzalolamas/Clases-particulares" target="_blank"><i class="fab fa-3x fa-github-alt"></i></a>
+              
             </div>
-            <div class="m-5">
-              <img class="w-50 h-auto" src="assets/img/streaming.png" alt="project-streaming">
+            <div class="m-5" data-aos="fade-down">
+              <img class="w-75 h-75" src="assets/img/streaming.png" alt="project-streaming">
               <h3>Streaming-1D</h3>
               <p>La temática es sobre servicios de transmisiones, y su función es la de encontrar el mejor servicio de streaming según lo que se quiera disfrutar(música,películas,etc).📺</p>
-              <a href="https://aromd.github.io/streaming-1D-develop/" target="_blank" class="myButton">Live</a>
-              <a href="https://github.com/AP-openProjects/streaming-1D" target="_blank" class="myButton">Repo</a>
+              <a href="https://aromd.github.io/streaming-1D-develop/" target="_blank"><i class="far fa-3x fa-eye"></i></a>
+              <a href="https://github.com/AP-openProjects/streaming-1D" target="_blank"><i class="fab fa-3x fa-github-alt"></i></a>
             </div>
           </div>
         </section>
@@ -126,9 +139,12 @@
             <div class="col-6 mt-5">
               <p class="font-weight-bold">¡Gracias por visitar mi portfolio!</p>
             </div>
-            <div class="col-3">
-              <a href="https://github.com/gonzalolamas" target="_blank"><i class="fab fa-4x fa-github shake-little"></i></a>
-              <a href="https://www.linkedin.com/in/gonzalo-lamas/" target="_blank"><i class="fab fa-4x fa-linkedin shake-little"></i></a>
+            <div class="col-3 mt-3">
+              <a href="https://github.com/gonzalolamas" target="_blank" class="text-decoration-none"><i class="fab fa-3x fa-github shake-little"></i></a>
+              <a href="https://www.linkedin.com/in/gonzalo-lamas/" target="_blank" class="text-decoration-none"><i class="fab fa-3x fa-linkedin shake-little"></i></a>
+            </div>
+            <div class="col-4 mt-3">
+              <p class="font-weight-bold text-center">©Gonzalo Lamas</p>
             </div>
           </div>
         </div>
@@ -147,5 +163,16 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <!-- animation aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--  navbar contraido al seleccionar  -->
+    <script type="text/javascript">    
+      $('.js-scroll-trigger').click(function() {
+$('.navbar-collapse').collapse('hide');
+});
+ </script>
   </body>
 </html>
