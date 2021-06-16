@@ -1,21 +1,19 @@
-/* Icon menu navbar */
-/* function toggleCssMenu(icon) {
-  var cssmenu = document.getElementById("cssmenu");
-  if (icon.className.indexOf("active") == -1) {
-    icon.className = "menu-icon active";
-    cssmenu.style.display = "block";
-    setTimeout(function () {
-      cssmenu.className = "active";
-    }, 0);
-  } else {
-    icon.className = "menu-icon";
-    cssmenu.className = "";
-    setTimeout(function () {
-      cssmenu.style.display = "none";
-    }, 411);
+/*  botton up  */
+
+window.onscroll = function() {
+  if(document.documentElement.scrollTop > 100) {
+    document.querySelector('.go-top-container')
+    .classList.add('show');
+  }else {
+    document.querySelector('.go-top-container')
+    .classList.remove('show');
   }
-} */
+}
 
-/* navbar contraido al seleccionar */
-
-
+document.querySelector('.go-top-container')
+.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior:'smooth'
+  })
+})
