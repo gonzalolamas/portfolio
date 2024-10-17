@@ -11,7 +11,7 @@ html {
 
 body {
   background: transparent;
-  background: url("../assets/img/fondo portafolio.png");
+  background-color: #242222 ;
 }
 
 /* Background icons */
@@ -137,7 +137,7 @@ body {
 .card img{
     width: 50%;
     height: 150px;
-    margin-left: 130px;
+    margin-left: 90px;
 }
 .card .contenido-card{
     padding: 15px;
